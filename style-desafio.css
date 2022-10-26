@@ -1,0 +1,222 @@
+body{
+    background-color: beige;
+}
+#logo{
+    width:6rem;
+}
+#nav{
+    background: rgb(53, 58, 64);
+}
+#nav-a:hover{
+    color: beige !important;
+}
+#cont-logo{
+    width: 20rem;
+}
+#main{
+    background:rgba(0, 0, 0, 0.5) url("./ba1.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.section-encabezado, .section-texto{
+    margin-right: 8rem;
+    text-align: end;
+    width: 50%;
+}
+.section-texto{
+    font-size: 1.3em;
+}
+#section-botton{
+    display: flex;
+    flex-direction: row;
+    margin-right: 8rem;
+}
+#section-boton1:hover{
+    background-color: rgba(183, 177, 177, 0.876);
+}
+#section-boton1 a:hover{
+    color: black !important;
+}
+#boton-form{
+    background-color: rgb(139, 200, 79);
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+}
+#card1, #card2, #card3{
+    width: 20rem;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+#boton-honolulu{
+    border: 1px solid white
+}
+#forms-inputs{
+    display: flex;
+    flex-direction: row;
+}
+/*----html tickets*/
+#buttom-reset, #buttom-resumen{
+    background-color: rgb(139, 200, 79);
+}
+
+/*----------------*/
+#div-footer{
+    background: linear-gradient(90deg, rgb(29, 58, 72),rgb(29, 67, 88), rgb(29,73,98), rgb(31,82,113));
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*----------iphone ---------------*/
+@media screen and (max-width: 480px){
+    #nav-derecho{
+        flex-direction: column-reverse;
+    }
+    #main{
+        display: flex;
+        align-items: center;
+        height: 40vh;
+    }
+    .section-encabezado{
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .section-texto{
+        font-size: .4rem;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    #section-botton{
+        justify-content: center;
+        margin: .5rem 0 0 0;
+    }
+    #section-boton1, #section-boton2{
+        width: 8rem;
+        height: 2.5rem;
+        font-size: .8rem;
+    }
+    #img-honolulu{
+        width: 100vw;
+        object-fit: cover;
+    }
+    #subrayado{
+        border-bottom: 1px dotted black;
+    }
+    #form-inputs{
+        margin: auto;
+        width: 50vw;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #input1, #input2{
+        width: 50vw;
+    }
+    /*------tickets-----*/
+    #input-container-1, #input-container-2{
+        display: flex;
+        flex-direction: column;
+    }
+    #nombre, #apellido{
+        width: 49vw;
+        margin: .8rem 0 0;
+    }
+    #cantidad, #categoria{
+        width: 50vw;
+        margin: .8rem 0 0;
+    }
+    #total-container{
+        width: 50vw;
+    }
+    #total-p, #total-span{
+        font-size: 1.2rem !important;
+    }
+
+
+
+}
+/*-------------------tablet--------------*/
+@media screen and (max-width: 768px){
+    #nav-derecho{
+        flex-direction: column-reverse;
+    }
+    #main{
+        display: flex;
+        align-items: center;
+        height: 40vh;
+    }
+    .section-encabezado{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .section-texto{
+        font-size: .9rem;
+        text-align: center;
+        width: 90%;
+        margin: 0;
+    }
+    #section-botton{
+        justify-content: center;
+        margin: .5rem 0 0 0;
+    }
+    #section-boton1, #section-boton2{
+        width: 8rem;
+        height: 2.5rem;
+        font-size: .8rem;
+    }
+    #img-honolulu{
+        width: 100vw;
+        object-fit: cover;
+    }
+    #subrayado{
+        border-bottom: 1px dotted black;
+    }
+    #form-inputs{
+        margin: auto;
+        width: 50vw;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #input1, #input2{
+        width: 50vw;
+    }
+
+    /*------tickets-----*/
+    #input-container-1, #input-container-2{
+        display: flex;
+        flex-direction: column;
+    }
+    #nombre, #apellido{
+        width: 49vw;
+        margin: .8rem 0 0;
+    }
+    #cantidad, #categoria{
+        width: 50vw;
+        margin: .8rem 0 0;
+    }
+    #total-container{
+        width: 50vw;
+    }
+    #total-p, #total-span{
+        font-size: 1.2rem !important;
+    }
+}
